@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Pantalla1_0418 extends StatelessWidget {
-  const Pantalla1_0418({Key? key}) : super(key: key);
+class Pantalla15_0418 extends StatelessWidget {
+  const Pantalla15_0418({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Pantalla1 Uribe0418"),
-          backgroundColor: Color(0xffc4a5f4),
+          title: const Text("Pantalla8 Uribe0418"),
+          backgroundColor: Color(0xffc894f9),
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 padding: const EdgeInsets.all(16.0),
@@ -25,24 +24,15 @@ class Pantalla1_0418 extends StatelessWidget {
                 ),
               ),
               Align(
-                alignment: Alignment.topCenter,
+                alignment: Alignment(-1.0, 1.0), //Alignment(-1.0, 1.0)
                 child: Container(
-                  margin: EdgeInsets.only(top: 20),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Color(0xffb996df),
-                      width: 10,
-                    ),
-                  ),
-                  width: 280,
-                  height: 280,
-                  alignment: Alignment.center,
+                  color: Color(0xffc894f9),
+                  padding: const EdgeInsets.all(15),
                   child: Text(
-                    'V',
+                    'I am a text',
                     style: TextStyle(
-                      fontSize: 180,
-                      color: Color(0xff633a90),
+                      fontSize: 38,
+                      color: Color(0xff7d32bc),
                     ),
                   ),
                 ),

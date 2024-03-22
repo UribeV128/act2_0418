@@ -1,14 +1,15 @@
+//Pantalla1_0418
 import 'package:flutter/material.dart';
 
-class Pantalla1_0418 extends StatelessWidget {
-  const Pantalla1_0418({Key? key}) : super(key: key);
+class Pantalla3_0418 extends StatelessWidget {
+  const Pantalla3_0418({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Pantalla1 Uribe0418"),
-          backgroundColor: Color(0xffc4a5f4),
+          title: const Text("Pantalla3 Uribe0418"),
+          backgroundColor: Color(0xff8dd7a6),
         ),
         body: Center(
           child: Column(
@@ -24,25 +25,32 @@ class Pantalla1_0418 extends StatelessWidget {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.topCenter,
+              Container(
+                padding: const EdgeInsets.all(16.0),
+                margin: EdgeInsets.all(40),
+                width: 300,
+                height: 90,
+                alignment: Alignment.centerLeft,
+                decoration: BoxDecoration(
+                  color: Color(0xff6ca87e), //blue
+                  borderRadius: BorderRadius.circular(45),
+                ),
                 child: Container(
-                  margin: EdgeInsets.only(top: 20),
+                  width: 210,
+                  height: 90,
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Color(0xffb996df),
-                      width: 10,
+                    color: Color(0xffa6e0b9), //light blue
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(45),
+                      bottomLeft: Radius.circular(45),
                     ),
                   ),
-                  width: 280,
-                  height: 280,
                   alignment: Alignment.center,
                   child: Text(
-                    'V',
+                    'Vivian',
                     style: TextStyle(
-                      fontSize: 180,
-                      color: Color(0xff633a90),
+                      fontSize: 32,
+                      color: Color(0xff524f4f),
                     ),
                   ),
                 ),

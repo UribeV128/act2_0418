@@ -1,15 +1,14 @@
-//Pantalla1_0418
 import 'package:flutter/material.dart';
 
-class Pantalla2_0418 extends StatelessWidget {
-  const Pantalla2_0418({Key? key}) : super(key: key);
+class Pantalla4_0418 extends StatelessWidget {
+  const Pantalla4_0418({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Pantalla2 Uribe0418"),
-          backgroundColor: Color(0xffefecec),
+          title: const Text("Pantalla1 Uribe0418"),
+          backgroundColor: Color(0xff6cb4ae),
         ),
         body: Center(
           child: Column(
@@ -25,28 +24,36 @@ class Pantalla2_0418 extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 130,
-                width: double.infinity,
+                margin: EdgeInsets.all(30),
+                height: 160,
                 decoration: BoxDecoration(
-                  color: Color(0xffe5c9e4),
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(50),
-                    bottomLeft: Radius.circular(50),
+                  borderRadius: BorderRadius.circular(20),
+                  gradient: new LinearGradient(
+                    colors: [
+                      Color(0xFF80CBC4),
+                      Color(0xFFB2DFDB),
+                    ],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    stops: [0.25, 0.90],
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Color(0xffede7ed),
-                      offset: Offset(9, 9),
-                      blurRadius: 6,
+                      color: Color(0xff4d7973),
+                      offset: Offset(-12, 12),
+                      blurRadius: 8,
                     ),
                   ],
                 ),
-                alignment: Alignment.center,
+                alignment: Alignment.centerLeft, //to align its child
+                padding: EdgeInsets.all(20),
                 child: Text(
                   'Vivian Uribe',
                   style: TextStyle(
-                    fontSize: 38,
+                    fontSize: 46,
                     color: Colors.white,
+                    fontWeight: FontWeight.w200,
+                    fontStyle: FontStyle.italic,
                   ),
                 ),
               ),

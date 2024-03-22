@@ -1,15 +1,14 @@
-//Pantalla1_0418
 import 'package:flutter/material.dart';
 
-class Pantalla2_0418 extends StatelessWidget {
-  const Pantalla2_0418({Key? key}) : super(key: key);
+class Pantalla5_0418 extends StatelessWidget {
+  const Pantalla5_0418({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Pantalla2 Uribe0418"),
-          backgroundColor: Color(0xffefecec),
+          title: const Text("Pantalla5 Uribe0418"),
+          backgroundColor: Color(0xfff8e751),
         ),
         body: Center(
           child: Column(
@@ -25,28 +24,20 @@ class Pantalla2_0418 extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 130,
-                width: double.infinity,
+                margin: EdgeInsets.all(40),
+                padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Color(0xffe5c9e4),
+                  color: Color(0xFFB2DFDB),
                   borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(50),
-                    bottomLeft: Radius.circular(50),
+                    topRight: Radius.circular(40.0),
+                    bottomLeft: Radius.circular(40.0),
                   ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xffede7ed),
-                      offset: Offset(9, 9),
-                      blurRadius: 6,
-                    ),
-                  ],
                 ),
-                alignment: Alignment.center,
                 child: Text(
                   'Vivian Uribe',
                   style: TextStyle(
                     fontSize: 38,
-                    color: Colors.white,
+                    color: Color(0xff1e6b65),
                   ),
                 ),
               ),
